@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Банковский мост",
+        "lat": 59.9340,
+        "lng": 30.3227,
+        "years": "1825–1826",
+        "status": "Сохранился",
+        "locationText": "Канал Грибоедова",
+        "shortDescription": "Короткое описание",
+        "description": "Описание",
+        "facts": [
+            "Факты"
+        ],
+        "image": null
+    },
+    {
+        "id": 2,
+        "name": "Львиный мост",
+        "lat": 59.9272,
+        "lng": 30.3095,
+        "years": "1825–1826",
+        "status": "Сохранился",
+        "locationText": "Канал Грибоедова",
+        "shortDescription": "Короткое опсиание",
+        "description": "Описание",
+        "facts": [
+            "Факты"
+        ],
+        "image": null
+    },
+    {
+        "id": 3,
+        "name": "Почтамтский мост",
+        "lat": 59.9299,
+        "lng": 30.2967,
+        "years": "1823–1824",
+        "status": "Сохранился",
+        "locationText": "Река Мойка",
+        "shortDescription": "Короткое описание",
+        "description": "Опсиание",
+        "facts": [
+            "Факты"
+        ],
+        "image": null
+    }
+]

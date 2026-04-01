@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цепные мосты Санкт-Петербурга</title>
+    <meta name="description" content="Учебный проект по истории: цепные мосты Санкт-Петербурга и Музей мостов.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=eb5be18c-ccef-45ec-88ea-91af17cf554c&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav">
+            <a class="logo" href="#top">Цепные мосты</a>
+            <nav>
+                <a href="#about">Главная</a>
+                <a href="#map-section">Карта</a>
+                <a href="#bridges">Мосты</a>
+                <a href="#museum">Музей</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <p class="eyebrow">Учебный проект по истории</p>
+                    <h1>Цепные мосты Санкт-Петербурга</h1>
+                    <p class="lead">
+                        ...
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#map-section">Открыть карту</a>
+                        <a class="button button-secondary" href="#museum">Перейти к музею</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <p class="hero-card-title"></p>
+                    <blockquote>
+                        «Город мостов и воды»
+                    </blockquote>
+                    <p>
+                        короткий абзац о Петербурге, своё впечатление,
+                        стихотворения или фрагмент исторического описания города.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">1. Общее про Петербург и мосты</p>
+                    <h2>Город, в котором мосты стали частью образа</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="text-card">
+                        <p>
+                            ...
+                        </p>
+                        
+                    </div>
+                    <div class="text-card accent-card">
+                        <p class="small-title">стихотворение</p>
+                        <p>
+                            ...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="map-section" class="section section-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">2. Интерактивная карта</p>
+                    <h2>Выберите мост на карте или из карточек ниже</h2>
+                </div>
+
+                <div class="map-layout">
+                    <div id="map" class="map"></div>
+
+                    <aside id="info-panel" class="info-panel">
+                        <span class="panel-label">Карточка объекта</span>
+                        <h3 id="bridge-name">Выберите мост</h3>
+                        <p id="bridge-meta" class="bridge-meta">Дата</p>
+                        <div id="bridge-image" class="bridge-image-wrap">
+                            <div class="image-placeholder">...</div>
+                        </div>
+                        <p id="bridge-description" class="bridge-description">
+                            Нажмите на метку на карте или на карточку моста, чтобы увидеть описание.
+                        </p>
+                        <ul id="bridge-facts" class="fact-list"></ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section id="bridges" class="section">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">3. Информация про мосты</p>
+                    <h2>Карточки</h2>
+                </div>
+                <div id="bridges-list" class="bridge-grid"></div>
+            </div>
+        </section>
+
+        <section id="museum" class="section section-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">4. История Музея мостов</p>
+                    <h2>Отдельный блок под музей</h2>
+                </div>
+
+                <div class="museum-grid">
+                    <div class="text-card">
+                        <p class="small-title">Заготовка текста</p>
+                        <p>
+                            история Музея мостов:
+                        </p>
+                        <p>
+                            ...
+                        </p>
+                    </div>
+
+                    <div class="museum-timeline">
+                        <div class="timeline-item">
+                            <span>Этап 1</span>
+                            <p>...</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span>Этап 2</span>
+                            <p>...</p>
+                        </div>
+                        <div class="timeline-item">
+                            <span>Этап 3</span>
+                            <p>...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <strong>Проект по истории</strong>
+                <p>Цепные мосты Санкт-Петербурга.</p>
+            </div>
+            <div>
+                <p>...</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
