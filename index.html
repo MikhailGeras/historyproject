@@ -1,164 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Цепные мосты Санкт-Петербурга</title>
-    <meta name="description" content="Учебный проект по истории: цепные мосты Санкт-Петербурга и Музей мостов.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=eb5be18c-ccef-45ec-88ea-91af17cf554c&lang=ru_RU" type="text/javascript"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Туристический сайт о цепных мостах Санкт-Петербурга: карта, история, стихи, фотографии и страницы мостов.">
+<title>Цепные мосты Санкт-Петербурга — туристический гид</title>
+<link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="container nav">
-            <a class="logo" href="#top">Цепные мосты</a>
-            <nav>
-                <a href="#about">Главная</a>
-                <a href="#map-section">Карта</a>
-                <a href="#bridges">Мосты</a>
-                <a href="#museum">Музей</a>
-            </nav>
+<div class="page-bg" aria-hidden="true"></div>
+<header class="site-header" data-nav>
+  <div class="container nav-shell">
+    <a class="brand" href="index.html" aria-label="На главную">
+      <span class="brand-mark">ЦМ</span>
+      <span class="brand-text"><strong>Цепные мосты</strong><small>Санкт-Петербург</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Главное меню">
+      <a class="is-active" href="index.html">Главная</a><a class="" href="map.html">Карта</a><a class="" href="museum.html">История музея</a>
+      <div class="dropdown">
+        <a class="drop-trigger " href="bridges.html">Мосты</a>
+        <div class="dropdown-panel">
+          <a href="bridges.html"><b>Все мосты</b></a><a href="bridge/bankovsky.html">Банковский мост</a><a href="bridge/lviny.html">Львиный мост</a><a href="bridge/pochtamtsky.html">Почтамтский мост</a><a href="bridge/egipetsky.html">Египетский мост</a><a href="bridge/panteleymonovsky.html">Пантелеймоновский мост</a><a href="bridge/ekateringof.html">Цепной мост в Екатерингофском парке</a>
         </div>
-    </header>
-
-    <main id="top">
-        <section class="hero">
-            <div class="container hero-grid">
-                <div>
-                    <p class="eyebrow">Учебный проект по истории</p>
-                    <h1>Цепные мосты Санкт-Петербурга</h1>
-                    <p class="lead">
-                        ...
-                    </p>
-                    <div class="hero-actions">
-                        <a class="button button-primary" href="#map-section">Открыть карту</a>
-                        <a class="button button-secondary" href="#museum">Перейти к музею</a>
-                    </div>
-                </div>
-                <div class="hero-card">
-                    <p class="hero-card-title"></p>
-                    <blockquote>
-                        «Город мостов и воды»
-                    </blockquote>
-                    <p>
-                        короткий абзац о Петербурге, своё впечатление,
-                        стихотворения или фрагмент исторического описания города.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker">1. Общее про Петербург и мосты</p>
-                    <h2>Город, в котором мосты стали частью образа</h2>
-                </div>
-                <div class="about-grid">
-                    <div class="text-card">
-                        <p>
-                            ...
-                        </p>
-                        
-                    </div>
-                    <div class="text-card accent-card">
-                        <p class="small-title">стихотворение</p>
-                        <p>
-                            ...
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="map-section" class="section section-soft">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker">2. Интерактивная карта</p>
-                    <h2>Выберите мост на карте или из карточек ниже</h2>
-                </div>
-
-                <div class="map-layout">
-                    <div id="map" class="map"></div>
-
-                    <aside id="info-panel" class="info-panel">
-                        <span class="panel-label">Карточка объекта</span>
-                        <h3 id="bridge-name">Выберите мост</h3>
-                        <p id="bridge-meta" class="bridge-meta">Дата</p>
-                        <div id="bridge-image" class="bridge-image-wrap">
-                            <div class="image-placeholder">...</div>
-                        </div>
-                        <p id="bridge-description" class="bridge-description">
-                            Нажмите на метку на карте или на карточку моста, чтобы увидеть описание.
-                        </p>
-                        <ul id="bridge-facts" class="fact-list"></ul>
-                    </aside>
-                </div>
-            </div>
-        </section>
-
-        <section id="bridges" class="section">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker">3. Информация про мосты</p>
-                    <h2>Карточки</h2>
-                </div>
-                <div id="bridges-list" class="bridge-grid"></div>
-            </div>
-        </section>
-
-        <section id="museum" class="section section-soft">
-            <div class="container">
-                <div class="section-heading">
-                    <p class="section-kicker">4. История Музея мостов</p>
-                    <h2>Отдельный блок под музей</h2>
-                </div>
-
-                <div class="museum-grid">
-                    <div class="text-card">
-                        <p class="small-title">Заготовка текста</p>
-                        <p>
-                            история Музея мостов:
-                        </p>
-                        <p>
-                            ...
-                        </p>
-                    </div>
-
-                    <div class="museum-timeline">
-                        <div class="timeline-item">
-                            <span>Этап 1</span>
-                            <p>...</p>
-                        </div>
-                        <div class="timeline-item">
-                            <span>Этап 2</span>
-                            <p>...</p>
-                        </div>
-                        <div class="timeline-item">
-                            <span>Этап 3</span>
-                            <p>...</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-grid">
-            <div>
-                <strong>Проект по истории</strong>
-                <p>Цепные мосты Санкт-Петербурга.</p>
-            </div>
-            <div>
-                <p>...</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero hero-cover">
+  <div class="hero-cover-media" aria-hidden="true"><img src="assets/images/panteleymonovsky-02-bez-nazvaniya.webp" alt=""></div>
+  <div class="hero-cover-overlay" aria-hidden="true"></div>
+  <div class="container hero-cover-content">
+    <p class="eyebrow eyebrow-light">Туристический маршрут · история · фотографии · поэзия</p>
+    <h1>Цепные мосты Санкт-Петербурга</h1>
+    <p class="lead lead-light">Один маршрут — шесть мостов, в которых инженерная мысль, скульптура и городской пейзаж складываются в особую петербургскую прогулку. На сайте собраны история, карта, фотографии и удобные страницы по каждому мосту.</p>
+    <div class="hero-actions"><a class="btn btn-primary" href="map.html">Открыть карту</a><a class="btn btn-secondary btn-glass" href="bridges.html">Мосты</a></div>
+  </div>
+</section>
+<section class="section section-soft">
+  <div class="container story-panel">
+    <article class="panel">
+      <p class="eyebrow"></p><h2>Цепной мост — не просто переправа</h2>
+      <p>Это инженерные эксперименты первой четверти XIX века. Они появились в городе, где вода разрывала пространство на острова, а мосты формировали повседневные маршруты, перспективы и новые архитектурные ансамбли.</p>
+      <p>У каждого объекта свой характер: у Банковского — грифоны, у Львиного — белые львы, у Почтамтского — обелиски и ранний инженерный риск, у Египетского — драматичная катастрофа, у Пантелеймоновского — память о разобранной цепной конструкции, у Екатерингофского — начало всей линии.</p>
+    </article>
+    <aside class="image-stack"><img src="assets/images/pochtamtsky-01-image1.webp" alt="Почтамтский мост"><img src="assets/images/ekateringof-01-litograf-mosta-cvet.webp" alt="Литография Екатерингофского цепного моста"></aside>
+  </div>
+</section>
+<section class="section">
+  <div class="container section-title"><div><p class="eyebrow"></p></div></div>
+  <div class="container grid-3">
+    <article class="panel"><h3>Инженерия</h3><p>Цепи, подвески, обелиски, ростверки и скрытые анкеровки показывают, как Петербург проверял новые мостовые технологии в реальной городской среде.</p></article>
+    <article class="panel"><h3>Архитектура</h3><p>Львы, грифоны, сфинксы и неоготические порталы превращают конструкцию в образ: мост запоминается не схемой, а силуэтом и деталями.</p></article>
+    <article class="panel"><h3>Память</h3><p>Часть мостов перестроена или утрачена, поэтому фотографии, чертежи и литографии становятся полноценной частью маршрута.</p></article>
+  </div>
+</section>
+<section class="section section-soft">
+  <div class="container section-title"><div><p class="eyebrow">Мосты в стихах</p><h2>Поэтический слой Петербурга</h2></div></div>
+  <div class="container poetry-grid"><article class="poem-card"><div class="author">Владимир Иванов</div><blockquote>Пыль веков и канал Грибоедова
+Украшают два этих моста.</blockquote><h3>Львиному и Банковскому мостикам</h3></article><article class="poem-card"><div class="author">Дмитрий Миронов</div><blockquote>Держать зубами цепь, борясь с дремотой —
+так мост превращает львов в настоящих стражей.</blockquote><h3>Львиный мост</h3></article><article class="poem-card"><div class="author">Анатолий Болгов</div><blockquote>Меня мой Львиный Мостик бережёт.
+По-царски изогнулся Львиный Мостик.</blockquote><h3>Львиный Мостик</h3></article>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-shell">
+    <div><strong>Цепные мосты Санкт-Петербурга</strong><p>Сайт о шести цепных мостах: истории, маршрутах, архитектуре, поэзии и фотографиях.</p></div>
+    <div class="footer-links"><a href="index.html">Главная</a><a href="map.html">Карта</a><a href="museum.html">История музея</a><a href="bridges.html">Мосты</a></div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

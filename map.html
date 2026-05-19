@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Цепные мосты Санкт-Петербурга">
+<title>Карта цепных мостов Санкт-Петербурга</title>
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<div class="page-bg" aria-hidden="true"></div>
+<header class="site-header" data-nav>
+  <div class="container nav-shell">
+    <a class="brand" href="index.html" aria-label="На главную">
+      <span class="brand-mark">ЦМ</span>
+      <span class="brand-text"><strong>Цепные мосты</strong><small>Санкт-Петербург</small></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Главное меню">
+      <a class="" href="index.html">Главная</a><a class="is-active" href="map.html">Карта</a><a class="" href="museum.html">История музея</a>
+      <div class="dropdown">
+        <a class="drop-trigger " href="bridges.html">Мосты</a>
+        <div class="dropdown-panel">
+          <a href="bridges.html"><b>Все мосты</b></a><a href="bridge/bankovsky.html">Банковский мост</a><a href="bridge/lviny.html">Львиный мост</a><a href="bridge/pochtamtsky.html">Почтамтский мост</a><a href="bridge/egipetsky.html">Египетский мост</a><a href="bridge/panteleymonovsky.html">Пантелеймоновский мост</a><a href="bridge/ekateringof.html">Цепной мост в Екатерингофском парке</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero"><div class="container"><p class="eyebrow">Карта</p><h1>Интерактивная карта</h1><p class="lead">Нажмите на точку или карточку ниже, чтобы увидеть краткое описание, фото, факты и перейти на страницу моста.</p></div></section>
+<section class="section">
+  <div class="container map-layout">
+    <article class="map-panel">
+      <div class="map-frame"><div id="map" class="yandex-map" aria-label="Интерактивная карта цепных мостов Санкт-Петербурга"></div></div>
+      <p class="map-note"></p>
+    </article>
+    <aside id="info-panel" class="info-panel">
+      <span class="panel-label">Карточка объекта</span>
+      <h3 id="bridge-name">Выберите мост</h3>
+      <p id="bridge-meta" class="bridge-meta">Нажмите на метку на карте или на карточку моста.</p>
+      <div id="bridge-image" class="bridge-image-wrap"><div class="image-placeholder">Фото появится после выбора моста</div></div>
+      <p id="bridge-description" class="bridge-description">Карта содержит шесть объектов маршрута: сохранившиеся пешеходные цепные мосты, перестроенные мосты и утраченный цепной мост в Екатерингофском парке.</p>
+      <ul id="bridge-facts" class="fact-list"></ul>
+      <a id="bridge-link" class="btn btn-primary panel-link" href="bridges.html">Открыть страницу моста</a>
+    </aside>
+  </div>
+  <div class="container map-cards-shell">
+    <div class="section-title compact-title"><div><p class="eyebrow">Выбор объекта</p><h2>Мосты на карте</h2></div></div>
+    <div id="bridges-list" class="route-list map-bridge-list"></div>
+    <div class="map-actions"><a class="btn btn-primary" href="bridges.html">Смотреть каталог</a><a class="btn btn-secondary" href="museum.html">Исторический контекст</a></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-shell">
+    <div><strong>Цепные мосты Санкт-Петербурга</strong><p>Туристический сайт о шести цепных мостах: истории, маршрутах, архитектуре, поэзии и фотографиях.</p></div>
+    <div class="footer-links"><a href="index.html">Главная</a><a href="map.html">Карта</a><a href="museum.html">История музея</a><a href="bridges.html">Мосты</a></div>
+  </div>
+</footer>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=eb5be18c-ccef-45ec-88ea-91af17cf554c&lang=ru_RU" type="text/javascript"></script>
+<script src="assets/js/yandex-map.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
