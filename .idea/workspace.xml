@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0f9e1252-4ee6-4dcb-a0ef-09e56501e61e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/bankovsky.html" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/bankovsky.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/egipetsky.html" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/egipetsky.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/ekateringof.html" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/ekateringof.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/lviny.html" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/lviny.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/panteleymonovsky.html" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/panteleymonovsky.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bridge/pochtamtsky.html" beforeDir="false" afterPath="$PROJECT_DIR$/bridge/pochtamtsky.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bridges.html" beforeDir="false" afterPath="$PROJECT_DIR$/bridges.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/map.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/museum.html" beforeDir="false" afterPath="$PROJECT_DIR$/museum.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +34,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
