@@ -22,13 +22,17 @@
     let index = 0;
     const main = gallery.querySelector('[data-gallery-main]');
     const counter = gallery.querySelector('[data-gallery-counter]');
+    const captionText = gallery.querySelector('[data-gallery-caption-text]') || gallery.querySelector('.gallery-caption span:first-child');
+    const captions = JSON.parse(gallery.dataset.captions || '[]');
     const thumbs = gallery.querySelector('[data-gallery-thumbs]');
     const prev = gallery.querySelector('[data-prev]');
     const next = gallery.querySelector('[data-next]');
 
     function render() {
       main.src = images[index];
-      main.alt = `${gallery.dataset.title || 'Изображение'} — фото ${index + 1}`;
+      const caption = captions[index] || `${gallery.dataset.title || 'Изображение'} — изображение ${index + 1}`;
+      main.alt = caption;
+      if (captionText) captionText.textContent = caption;
       counter.textContent = `${index + 1} / ${images.length}`;
       thumbs.querySelectorAll('button').forEach((button, i) => button.classList.toggle('active', i === index));
     }
