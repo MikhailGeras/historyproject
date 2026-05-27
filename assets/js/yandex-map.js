@@ -18,7 +18,7 @@
             "Опорные элементы скрыты внутри полых фигур грифонов.",
             "Сохранился как один из трёх пешеходных цепных мостов Петербурга."
         ],
-        "image": "assets/images/card-illustrations/bankovsky-main.webp",
+        "image": "assets/images/card-illustrations/bankovsky-card-current.webp",
         "url": "bridge/bankovsky.html"
     },
     {
@@ -34,11 +34,9 @@
         "facts": [
             "Открыт 1 июля 1826 года.",
             "Находится в створе Львиного переулка и Малой Подьяческой улицы.",
-            "Проект инженеров В. фон Треттера и В. А. Христиановича.",
-            "Скульптуры львов выполнены по моделям П. П. Соколова.",
             "Реставрировался несколько раз, но без радикальной перестройки образа."
         ],
-        "image": "assets/images/lviny-02-image6.webp",
+        "image": "assets/images/card-illustrations/lviny-card-current.webp",
         "url": "bridge/lviny.html"
     },
     {
@@ -57,7 +55,7 @@
             "Проект В. фон Треттера и В. А. Христиановича.",
             "Расположен у Главного почтамта на Мойке."
         ],
-        "image": "assets/images/card-illustrations/pochtamtsky-historical.webp",
+        "image": "assets/images/card-illustrations/pochtamtsky-card-current.webp",
         "url": "bridge/pochtamtsky.html"
     },
     {
