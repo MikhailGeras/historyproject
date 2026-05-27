@@ -57,30 +57,29 @@
   margin-top: 1rem;
 }
 /* Aesthetics in urban space */
-.aesthetic-section{background:rgba(255,253,248,.26);border-top:1px solid rgba(227,216,201,.78);border-bottom:1px solid rgba(227,216,201,.78)}
-.aesthetic-heading{margin-bottom:22px}
-.aesthetic-heading .section-title p,.aesthetic-heading p:last-child{max-width:860px}
-.aesthetic-stack{display:grid;gap:18px}
-.aesthetic-item{background:rgba(255,253,248,.92);border:1px solid var(--line);border-radius:36px;box-shadow:var(--shadow);overflow:hidden}
-.aesthetic-item[open]{box-shadow:0 24px 58px rgba(45,34,20,.12)}
-.aesthetic-item-head{list-style:none;cursor:pointer;display:grid;grid-template-columns:260px 1fr;gap:24px;align-items:center;padding:18px 22px}
+.aesthetic-section{background:rgba(255,253,248,.2);border-top:1px solid rgba(227,216,201,.78);border-bottom:1px solid rgba(227,216,201,.78)}
+.aesthetic-heading{margin-bottom:18px}
+.aesthetic-heading p:last-child{max-width:860px}
+.aesthetic-stack{display:grid;gap:16px}
+.aesthetic-item{background:rgba(255,253,248,.94);border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);overflow:hidden;transition:box-shadow .18s ease,transform .18s ease}
+.aesthetic-item:hover{box-shadow:0 20px 48px rgba(45,34,20,.12)}
+.aesthetic-item-head{list-style:none;cursor:pointer;display:grid;grid-template-columns:200px 1fr;gap:22px;align-items:center;padding:18px 22px}
 .aesthetic-item-head::-webkit-details-marker{display:none}
-.aesthetic-thumb{width:100%;height:168px;object-fit:cover;border-radius:24px;border:1px solid var(--line);box-shadow:0 10px 26px rgba(45,34,20,.08)}
-.aesthetic-copy{display:grid;align-content:center;gap:8px;position:relative;padding-right:70px}
-.aesthetic-copy::after{content:'+';position:absolute;right:0;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#edf4f5;color:var(--accent);font-size:1.4rem;font-weight:950;box-shadow:0 10px 22px rgba(23,74,87,.12)}
+.aesthetic-thumb{width:100%;height:132px;object-fit:cover;border-radius:22px;border:1px solid var(--line)}
+.aesthetic-copy{display:grid;gap:8px;align-content:center;position:relative;padding-right:58px}
+.aesthetic-copy::after{content:'+';position:absolute;right:2px;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#edf4f5;color:var(--accent);font-size:1.25rem;font-weight:950;box-shadow:0 10px 22px rgba(23,74,87,.12)}
 .aesthetic-item[open] .aesthetic-copy::after{content:'−';background:var(--accent);color:#fff}
-.aesthetic-kicker{display:inline-flex;align-items:center;width:max-content;padding:7px 12px;border-radius:999px;background:#f3ece0;color:var(--accent2);font-size:.76rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
-.aesthetic-copy h3{margin:0;font-size:clamp(1.45rem,2vw,2.2rem);line-height:1.08;letter-spacing:-.03em}
-.aesthetic-summary{margin:0;color:var(--muted);font-size:1.02rem;line-height:1.55;max-width:62ch}
-.aesthetic-body{padding:0 22px 22px 306px}
-.aesthetic-body p{margin:0;padding:18px 20px 0;border-top:1px solid var(--line);color:var(--muted);font-size:1.02rem;line-height:1.72}
-@media(max-width:1080px){.aesthetic-item-head{grid-template-columns:220px 1fr}.aesthetic-thumb{height:152px}.aesthetic-body{padding:0 22px 22px 266px}}
-@media(max-width:820px){.aesthetic-stack{gap:14px}.aesthetic-item{border-radius:28px}.aesthetic-item-head{grid-template-columns:1fr;gap:16px;padding:16px}.aesthetic-thumb{height:190px}.aesthetic-copy{padding-right:56px}.aesthetic-copy::after{width:36px;height:36px;font-size:1.2rem}.aesthetic-copy h3{font-size:1.42rem}.aesthetic-summary{font-size:.98rem}.aesthetic-body{padding:0 16px 16px}.aesthetic-body p{padding:14px 4px 0}}
-
+.aesthetic-kicker{display:inline-flex;align-items:center;width:max-content;padding:6px 11px;border-radius:999px;background:#f3ece0;color:var(--accent2);font-size:.74rem;font-weight:950;letter-spacing:.08em;text-transform:uppercase}
+.aesthetic-copy h3{margin:0;font-size:clamp(1.35rem,1.75vw,1.95rem);line-height:1.1;letter-spacing:-.03em}
+.aesthetic-summary{margin:0;color:var(--muted);font-size:1rem;line-height:1.52;max-width:62ch}
+.aesthetic-body{padding:0 22px 20px 244px}
+.aesthetic-body p{margin:0;padding:16px 0 0;border-top:1px solid var(--line);color:var(--muted);font-size:1rem;line-height:1.7}
+@media(max-width:1080px){.aesthetic-item-head{grid-template-columns:170px 1fr}.aesthetic-thumb{height:118px}.aesthetic-body{padding:0 22px 20px 214px}}
+@media(max-width:820px){.aesthetic-stack{gap:14px}.aesthetic-item{border-radius:28px}.aesthetic-item-head{grid-template-columns:1fr;gap:14px;padding:16px}.aesthetic-thumb{height:168px}.aesthetic-copy{padding-right:48px}.aesthetic-copy::after{width:34px;height:34px;font-size:1.15rem}.aesthetic-copy h3{font-size:1.3rem}.aesthetic-summary{font-size:.97rem}.aesthetic-body{padding:0 16px 16px}.aesthetic-body p{padding-top:14px}}
 
 /* Museum history dropdown */
 .museum-dropdown-shell{max-width:1120px}
-.museum-dropdown{background:rgba(255,253,248,.9);border:1px solid var(--line);border-radius:36px;box-shadow:var(--shadow);overflow:hidden}
+.museum-dropdown{background:rgba(255,253,248,.92);border:1px solid var(--line);border-radius:36px;box-shadow:var(--shadow);overflow:hidden}
 .museum-dropdown summary{list-style:none;cursor:pointer;padding:28px 30px;display:flex;align-items:center;justify-content:space-between;gap:24px;background:linear-gradient(135deg,rgba(255,253,248,.96),rgba(246,241,232,.94))}
 .museum-dropdown summary::-webkit-details-marker{display:none}
 .museum-dropdown summary span{display:grid;gap:6px}
@@ -88,12 +87,7 @@
 .museum-dropdown summary strong{font-size:clamp(1.55rem,2.5vw,2.55rem);line-height:1.08;letter-spacing:-.035em;color:var(--ink)}
 .museum-dropdown summary::after{content:'+';width:44px;height:44px;flex:0 0 44px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;font-size:1.55rem;font-weight:950;box-shadow:0 12px 26px rgba(23,74,87,.18)}
 .museum-dropdown[open] summary::after{content:'−'}
-.museum-dropdown-content{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,.34fr);gap:24px;padding:0 30px 30px}
-.museum-text-flow{padding-top:2px;display:grid;gap:15px}
-.museum-text-flow p{margin:0;color:var(--muted);font-size:1.05rem;line-height:1.72}
-.museum-dropdown-aside{display:grid;gap:12px;align-self:start}
-.museum-dropdown-aside div{padding:18px;border:1px solid var(--line);border-radius:22px;background:#fffaf1}
-.museum-dropdown-aside b{display:block;color:var(--accent);font-size:1.6rem;line-height:1;margin-bottom:8px}
-.museum-dropdown-aside span{display:block;color:var(--muted);font-size:.96rem;line-height:1.45;font-weight:760}
-@media(max-width:900px){.museum-dropdown-content{grid-template-columns:1fr}.museum-dropdown-aside{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:700px){.museum-dropdown summary{padding:22px}.museum-dropdown-content{padding:0 22px 24px}.museum-dropdown-aside{grid-template-columns:1fr}.museum-dropdown summary::after{width:38px;height:38px;flex-basis:38px}}
+.museum-dropdown-content{display:block;padding:0 30px 30px}
+.museum-text-flow{max-width:980px;padding-top:4px;display:grid;gap:16px}
+.museum-text-flow p{margin:0;color:var(--muted);font-size:1.05rem;line-height:1.74}
+@media(max-width:700px){.museum-dropdown summary{padding:22px}.museum-dropdown-content{padding:0 22px 24px}.museum-dropdown summary::after{width:38px;height:38px;flex-basis:38px}.museum-text-flow p{font-size:1rem;line-height:1.68}}
